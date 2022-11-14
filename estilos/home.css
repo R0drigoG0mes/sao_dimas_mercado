@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+    /* PALETA DE CORES */
+    --azul:#00ff00;
+}
+
+body{
+    background-color: #eee;
+}
+
+/* HEADER */
+
+.cabeçalho img{
+    width: 100%;
+}
+
+.pesquisar-pai{
+    padding: 10px;
+    text-align: center;
+}
+
+.pesquisar-pai input{
+    width: 100%;
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid #bbb;
+}
+
+.pesquisar-pai input::placeholder{
+    color: #999;
+}
+
+.pesquisar-pai input::-webkit-search-cancel-button{
+    margin-left: 5px;
+}
+
+.pesquisar-pai input:focus{
+    outline: none;
+}
+
+/* NAV BAR */
+
+.categorias-pai{
+    text-align: center;
+    padding: 5px;
+
+}
+
+.categorias-pai select{
+    padding: 2px;
+}
+
+.categorias-pai select::-webkitopt{
+    background-color: blue;
+}
+
+.categorias-pai select:focus{
+    outline: none;
+}
+
+/* NAV BAR FIM */
+
+/* HEADER FIM */
+
+/* BOTTOM BAR */
+
+.bottom-bar{
+    position: absolute;
+    bottom: 0px;
+    background-color: aqua;
+}
+
+/* BOTTOM BAR FIM */
+
