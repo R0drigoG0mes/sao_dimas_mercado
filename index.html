@@ -10,6 +10,8 @@
 
     <!-- ---------------- LINKS ----------------- -->
 
+    <link rel="stylesheet" href="icones/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/home.css">
     <title>Supermercado São Dimas</title>
@@ -18,42 +20,138 @@
     <!-- POSITION ABSOLUTE COMEÇO -->
 
     <div class="bottom-bar">
-        <span>Promoções</span>
-        <span>Contato</span>
-        <span>Usuário</span>
-        <span>Ajuda</span>
+        <span class="icon-price-tag"></span>
+        <span class="icon-cart"></span>
+        <span class="icon-user"></span>
+        <span class="icon-phone"></span>
     </div>
 
     <!-- POSITION ABSOLUTE FIM -->
     <header class="cabeçalho">
             <img src="images/logo-mobile.jpg" alt="Logo mercado são dimas">
+            <!-- ----------------- CAROSSEL ---------------- -->
+                <div class="pai-carossel">
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images/pães-pequenos.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/bebidas-pequenas.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/futas-pequenas.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            <!-- ----------------- CAROSSEL ---------------- -->
             <div class="pesquisar-pai">
                 <input type="search" name="" id="" placeholder="Pesquisar Produto">
             </div>
-            <nav class="categorias-pai">
-                        <select name="" id="">
-                            <option value="">[Selecione uma categoria]</option>
-                            <option value="">Limpeza</option>
-                            <option value="">Alimentos Básicos</option>
-                            <option value="">Feira</option>
-                            <option value="">Carnes, Aves e Peixes</option>
-                            <option value="">Bebidas</option>
-                            <option value="">Bebidas Alcoólicas</option>
-                            <option value="">Higiene e Cuidados Pessoais</option>
-                            <option value="">Biscoitos e Salgadinhos</option>
-                        </select>
+            <nav class="pai-down">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-Light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Selecione uma Categoria
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Limpeza</a></li>
+                      <li><a class="dropdown-item" href="#">Alimentos Básicos</a></li>
+                      <li><a class="dropdown-item" href="#">Feira</a></li>
+                      <li><a class="dropdown-item" href="#">Bebidas</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Todas as Categorias</a></li>
+                    </ul>
+                  </div>
             </nav>
     </header>
     <main>
-        <div>
-            <p>Carrosel</p>
-        </div>
-        <div>
-            <p>Produtos</p>
+        <div class="produtos">
+
+            <div class="card-produto">
+                <img class="imagem-card" src="images/produtos/811pHh7hYfL._AC_SX425_.jpg" alt="">
+
+                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Achocolatado Nescau</p>
+            </div>
+
+            
+            <div class="card-produto">
+                <img class="imagem-card" src="images/produtos/6180IMK-O8L._AC_SX425_.jpg" alt="">
+                
+                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Salgadinho Cebolitos</p>
+            </div>
+
+            
+            <div class="card-produto">
+                <img class="imagem-card" src="images/produtos/4366762915_1.webp" alt="">
+
+                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Coca-cola</p>
+            </div>
+
+            
+            <div class="card-produto">
+                <img class="imagem-card" src="images/produtos/28319286_1GG.webp" alt="">
+
+                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Diamante Negro</p>
+            </div>
+            <div class="card-produto">
+                <img class="imagem-card" src="images/produtos/811pHh7hYfL._AC_SX425_.jpg" alt="">
+
+                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Achocolatado Nescau</p>
+            </div>
+
+            
+            <div class="card-produto">
+                <img class="imagem-card" src="images/produtos/6180IMK-O8L._AC_SX425_.jpg" alt="">
+                
+                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Salgadinho Cebolitos</p>
+            </div>
+
+            
+            <div class="card-produto">
+                <img class="imagem-card" src="images/produtos/4366762915_1.webp" alt="">
+
+                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Coca-cola</p>
+            </div>
+
+            
+            <div class="card-produto">
+                <img class="imagem-card" src="images/produtos/28319286_1GG.webp" alt="">
+
+                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Diamante Negro</p>
+            </div>
+
         </div>
     </main>
     <footer>
-        <p>contatos, localização, redes sociais, copy right</p>
+        <div class="mapa">
+            <h2>Localização</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.2855927189976!2d-49.15020578533764!3d-25.328195935081258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce9a72870f387%3A0x1eae83df0f68755b!2sS%C3%A3o%20Dimas%20Supermercado!5e0!3m2!1spt-BR!2sbr!4v1668461067006!5m2!1spt-BR!2sbr" style="border:0; width: 100%; height: 95vw;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="sociais">
+            <h2>Contato</h2>
+            <ul class="lista-redes">
+                <li><p><span class="icon-whatsapp"></span>(41)xxxxx-xxxx</p></li>
+                <li><p><span class="icon-phone"></span>(41)xxxxx-xxxx</p></li>
+                <li><p><span class="icon-facebook"></span><a href="https://pt-br.facebook.com/saodimassupermercado/">São Dimas Supermercado</a></p></li>
+                <li><p><span class="icon-instagram"></span><a href="https://www.instagram.com/supermercadosaodimas/">@supermercadosaodimas</a></p></li>
+                <li><p><span class="icon-mail4"></span>supermercadosaodimas@gmail.com</p></li>
+                <li><p><span class="icon-github"></span><a href="https://github.com/R0drigoG0mes">Rodrigo Gomes</a></p></li>
+            </ul>
+        </div>
+        
+        <p class="copy">Copyright Supermercado São Dimas&copy;</p>
     </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
