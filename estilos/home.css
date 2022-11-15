@@ -20,24 +20,10 @@ body{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.53);
 }
 
-.pesquisar-pai{
-    padding: 10px;
-    text-align: center;
-}
-
-.pesquisar-pai input{
-    width: 100%;
-    border-radius: 8px;
-    padding: 5px;
-    border: 1px solid #bbb;
-}
-
-.pesquisar-pai input::placeholder{
-    color: #999;
-}
-
-.pesquisar-pai input::-webkit-search-cancel-button{
-    margin-left: 5px;
+.pai-carossel{
+    border-top: 5px solid red;
+    border-bottom: 5px solid red;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.542);
 }
 
 .pesquisar-pai input:focus{
@@ -48,7 +34,7 @@ body{
 
 .lista-nav{
     list-style-type: none;
-    margin: 0px;
+    margin: 15px 0px 0px 0px;
     padding: 0px;
     display: block;
     text-align: center;
@@ -57,7 +43,12 @@ body{
 .lista-nav li{
     display: inline;
     margin: 0px 20px 0px 20px;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    color: #666;
+}
+
+button span{
+    font-size: 1.5em;
     color: #666;
 }
 
@@ -75,56 +66,57 @@ body{
     background-color: #030C85;
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     z-index: 10;
 }
 
 .bottom-bar span{
-    margin: 0px 20px 0px 20px;
-    font-size: 1.2em;
+    margin: 0px 30px 0px 30px;
+}
+
+.icon-user, .icon-search, .icon-icon-price-tag, .icon-cart{
+    font-size: 1.3em;
+    display: inline-block;
+    color: white;
 }
 
 /* BOTTOM BAR FIM */
 
 /* MAIN */
 
-.pai-carossel{
-    border-top: 5px solid red;
-    border-bottom: 5px solid red;
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.542);
-}
-
 .produtos{
     display: grid;
-    margin: 20px 0px 0px 0px;
+    margin: 15px 10px 10px 10px;
     grid-template-columns: auto auto;
     grid-template-rows: 220px 220px;
-    gap: 0px;
+    gap: 10px;
     text-align: center;
 }
 
 .card-produto{
     display: inline-block;
     background-color: white;
-    border: 1px solid #ddd;
+    border: none;
 }
 
 .card-produto p{
-    background-color: white;
+    background-color: #eee;
     color: black;
     padding: 5px;
-    outline: 2px solid #ddd;
     margin-bottom: 0px;
     height: 70px;
+    border: none;
 }
 
 .preço{
     font-weight: bold;
+    font-size: 1.3em;
     color: black;
 }
 
 .nome-produto{
     font-size: .8em;
+    text-transform: uppercase;
 }
 
 .imagem-card{
@@ -138,7 +130,7 @@ body{
 /* FOOTER */
 
 footer{
-    margin-bottom: 44px;
+    margin-bottom: 54px;
     background-color: #02074e;
     display: inline-block;
     padding: 10px 0px 10px 0px;
@@ -152,13 +144,13 @@ h2{
 
 .copy{
     text-align: center;
-    font-size: .7em;
+    font-size: .85em;
 }
 
 .lista-redes{
     list-style-type: none;
     padding: 0px;
-    font-size: .9em;
+    font-size: 1.1em;
 }
 
 .lista-redes li span{

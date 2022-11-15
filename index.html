@@ -20,10 +20,17 @@
     <!-- POSITION ABSOLUTE COMEÇO -->
 
     <div class="bottom-bar">
+        <span class="icon-search"></span>
         <span class="icon-price-tag"></span>
-        <span class="icon-cart"></span>
+
+        <span class="position-relative">
+            <span class="icon-cart" style="margin: 0px;"></span>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="margin: 30% 0px 0px 15px; transform: translateY(-50%);">
+              0
+            </span>
+        </span>
+
         <span class="icon-user"></span>
-        <span class="icon-phone"></span>
     </div>
 
     <!-- POSITION ABSOLUTE FIM -->
@@ -54,14 +61,23 @@
                     </div>
                 </div>
             <!-- ----------------- CAROSSEL ---------------- -->
-            <div class="pesquisar-pai">
-                <input type="search" name="" id="" placeholder="Pesquisar Produto">
-            </div>
             <nav class="pai-down">
                 <ul class="lista-nav">
+                            <!-- Offcanvas -->
                     <li>
-                        <span class="icon-menu"></span>
+                        <button class="btn btn-light d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><span class="icon-menu"></span></button>
+
+                        <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+                            <div class="offcanvas-header">
+                              <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Categotias</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                              <p class="mb-0">teste</p>
+                            </div>
+                          </div>
                     </li>
+                            <!-- Offcanvas FIM -->
                     <li>
                         <span class="icon-sort-alpha-desc"></span>
                     </li>
@@ -80,67 +96,67 @@
             <div class="card-produto">
                 <img class="imagem-card" src="images/produtos/leite.webp" alt="">
 
-                <p class="nome-produto"><span class="preço">R$ 5,49</span><br> Leite Piracanjuba</p>
+                <p class="nome-produto">Leite Piracanjuba <br> <span class="preço">R$ 5,49</span></p>
             </div>
 
             <div class="card-produto">
                 <img class="imagem-card" src="images/produtos/nescau.webp" alt="">
 
-                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Achocolatado Nescau</p>
+                <p class="nome-produto">Achocolatado Nescau <br> <span class="preço">R$ 7,99</span></p>
             </div>
 
             
             <div class="card-produto">
                 <img class="imagem-card" src="images/produtos/6180IMK-O8L._AC_SX425_.jpg" alt="">
                 
-                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Salgadinho Cebolitos</p>
+                <p class="nome-produto">Salgadinho Cebolitos <br> <span class="preço">R$ 7,99</span></p>
             </div>
 
             
             <div class="card-produto">
                 <img class="imagem-card" src="images/produtos/4366762915_1.webp" alt="">
 
-                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Coca-cola</p>
+                <p class="nome-produto">Coca-cola <br> <span class="preço">R$ 7,99</span></p>
             </div>
 
             
             <div class="card-produto">
                 <img class="imagem-card" src="images/produtos/28319286_1GG.webp" alt="">
 
-                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Diamante Negro</p>
+                <p class="nome-produto">Diamante Negro <br> <span class="preço">R$ 7,99</span></p>
             </div>
 
             <div class="card-produto">
                 <img class="imagem-card" src="images/produtos/leite.webp" alt="">
 
-                <p class="nome-produto"><span class="preço">R$ 5,49</span><br> Leite Piracanjuba</p>
+                <p class="nome-produto">Leite Piracanjuba <br> <span class="preço">R$ 5,49</span></p>
             </div>
 
             <div class="card-produto">
                 <img class="imagem-card" src="images/produtos/nescau.webp" alt="">
 
-                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Achocolatado Nescau</p>
+                <p class="nome-produto">Achocolatado Nescau <br> <span class="preço">R$ 7,99</span></p>
             </div>
 
             
             <div class="card-produto">
                 <img class="imagem-card" src="images/produtos/6180IMK-O8L._AC_SX425_.jpg" alt="">
                 
-                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Salgadinho Cebolitos</p>
+                <p class="nome-produto">Salgadinho Cebolitos <br> <span class="preço">R$ 7,99</span></p>
             </div>
 
             
             <div class="card-produto">
                 <img class="imagem-card" src="images/produtos/4366762915_1.webp" alt="">
 
-                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Coca-cola</p>
+                <p class="nome-produto">Coca-cola <br> <span class="preço">R$ 7,99</span></p>
             </div>
 
             
             <div class="card-produto">
                 <img class="imagem-card" src="images/produtos/28319286_1GG.webp" alt="">
 
-                <p class="nome-produto"><span class="preço">R$ 7,99</span><br> Diamante Negro</p>
+                <p class="nome-produto">Diamante Negro <br> <span class="preço">R$ 7,99</span></p>
             </div>
 
         </div>
